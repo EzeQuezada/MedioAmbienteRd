@@ -50,7 +50,7 @@ export default function LoginScreen() {
       Alert.alert('Éxito', 'Sesión iniciada correctamente', [
         {
           text: 'OK',
-          onPress: () => router.replace('/(drawer)/'),
+          onPress: () => router.replace('/drawer'),
         },
       ]);
     } catch (error: any) {
@@ -159,7 +159,7 @@ export default function LoginScreen() {
         <View style={styles.registerContainer}>
           <Text style={styles.registerText}>¿No tienes cuenta?</Text>
           <TouchableOpacity
-            onPress={() => router.push('/(drawer)/voluntariado')}
+            onPress={() => router.push('/drawer/voluntariado')}
             disabled={loading}>
             <Text style={styles.registerLink}>Regístrate como voluntario</Text>
           </TouchableOpacity>
